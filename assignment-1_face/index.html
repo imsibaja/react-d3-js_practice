@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Smiley Face</title>
+  <style>
+    body { margin: 0; overflow: hidden; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f0f0; }
+  </style>
+
+  <!-- React & ReactDOM UMD builds -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/d3@5.11.0/dist/d3.min.js"></script>
+
+  <!-- Babel to allow JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Load component files FIRST -->
+  <script type="text/babel" src="./BackgroundCircle.js"></script>
+  <script type="text/babel" src="./eyes.js"></script>
+  <script type="text/babel" src="./mouth.js"></script>
+  <script type="text/babel" src="./faceContainer.js"></script>
+  <script type="text/babel" src="./face.js"></script>
+
+  <!-- Your React code -->
+  <script type="text/babel" src="index.js"></script>
+</body>
+</html>
